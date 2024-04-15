@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Khand:wght@300;400;500;600;700&family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#areaMenu {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#areaLogo {
+    padding: 0.5vw 0 0 2vw;
+}
+
+#logo {
+    width: 9vw;
+}
+
+#linksMenu {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.3vw;
+}
+
+#linksMenu #Links{
+    font-family: "Khand", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #442B02;
+}
+
+#areaBanner {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#bannerSite {
+    width: 70%;
+}
+
+#areaTopo {
+    display: grid;
+    row-gap: 4vw;
+}
+
+.tituloAreaProd {
+    color: #442B02;
+    font-family: "Inter", sans-serif;
+    font-size: 1.08vw;
+    font-weight: 300;
+    padding-left: 4vw;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5vw;
+    padding: 1vw 4vw;
+}
+
+.imgProd {
+    width: 7vw;
+}
+
+.prodIndividual {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 2fr 0.5fr;
+    border: 1px solid #785B31;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 1vw;
+}
+
+.descProd {
+    font-family: "Khand", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #442B02;
+}
+
+#areaConteudo {
+    display: grid;
+    row-gap: 3vw;
+}
+
+footer {
+    font-family: "Khand", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    background-color: #442B02;
+    display: grid;
+    grid-template-areas: "scR1 scR2 scR3" "logoFooter logoFooter logoFooter";
+    justify-items: center;
+    padding: 1vw;
+    margin-top: 3vw;
+}
+
+.scR1 {
+    grid-area: scR1;
+}
+
+.scR2 {
+    grid-area: scR2;
+}
+
+.scR3 {
+    grid-area: scR3;
+}
+
+#areaLinksProd {
+    display: grid;
+}
+
+#areaLinksProd .linksProd {
+    text-decoration: none;
+    color: #fff;
+}
+
+.secaoRodape h3{
+    font-weight: 100;
+    font-size: 1.3vw;
+    margin-bottom: 0.7vw;
+}
+
+#areaContatos {
+    display: grid;
+}
+
+.imgTelefone {
+    width: 10vw;
+    margin-bottom: 1vw;
+}
+
+.imgEmail {
+    width: 15vw;
+}
+
+#imgPagamento {
+    width: 15vw;
+}
+
+.tituloPagamento {
+    text-align: center;
+}
+
+#areaLogoFooter {
+    width: 100%;
+    display: grid;
+    justify-items: right;
+    grid-area: logoFooter;
+    padding-right: 2vw;
+    margin-top: 1vw;
+}
