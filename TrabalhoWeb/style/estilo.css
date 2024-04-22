@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Khand:wght@300;400;500;600;700&family=Oswald:wght@200..700&display=swap');
+
 html ::-webkit-scrollbar {
     width: 0.6vw;
   }
@@ -7,3 +9,95 @@ html ::-webkit-scrollbar {
   html ::-webkit-scrollbar-track {
     background: #ededed;
   }
+
+.prodBtn {
+  background-color: white;
+  font-family: "Khand", sans-serif;
+  font-weight: 300;
+  color: #442B02;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3vw;
+}
+
+#areaBateria {
+  grid-area: bateria;
+}
+
+#areaViolao {
+  grid-area: violao;
+}
+
+#areaTeclado {
+  grid-area: teclado;
+}
+
+#areaGaita {
+  grid-area: gaita;
+}
+
+#areaGuitarra {
+  grid-area: guitarra;
+}
+
+#areaConteudo {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  margin-bottom: 5vw;
+  margin-top: 5vw;
+}
+
+#areaExpoMenu {
+  display: grid;
+  grid-template-areas: "bateria violao teclado teclado"
+                       "bateria violao gaita guitarra"
+                       "bateria violao gaita guitarra";
+  width: 70vw;
+  height: 25vw;
+  gap: 1vw;
+}
+
+#areaExpoMenu div {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0.1vw 0.1vw 0.3vw 0.1vw #888888;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 1vw;
+}
+
+#areaExpoMenu div a img:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+
+#prodBateria {
+  width: 25vw;
+}
+
+#prodViolao {
+  width: 10vw;
+}
+
+#prodTeclado {
+  width: 20vw;
+}
+
+#prodGaita {
+  width: 10vw;
+}
+
+#prodGuitarra {
+  width: 6vw;
+}
+
+#tituloCont {
+  width: 100%;
+  text-align: center;
+  font-family: "Khand", sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
+  color: #442B02;
+}

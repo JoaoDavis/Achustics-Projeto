@@ -1,40 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/estilo.css">
-    <title>Diretores</title>
-</head>
-<body>
-    <header>
-        <img src="imagens/bannerSite.png" alt="" id="bannerSite">
-        <h1 id="tituloSite">DIRETORES DESTAQUES</h1>
-        <h2 id="subTitulo">PRINCIPAIS OBRAS DOS DIRETORES DE CINEMA DESTAQUES</h2>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/estiloProdutos.css">
+        <link rel="stylesheet" href="style/estilo.css">
+        <title>Achustics</title>
+    </head>
+    <body onLoad="slide1()">
+        <header id="areaTopo">
+            <nav>
+                <a href="index.html" id="areaLogo"><img src="imagens/Logo.png" alt="" id="logo"></a>
+                <ul>
+                    <li class="dropdown">
+                        <a href="">Produtos</a>
+        
+                        <div class="dropdown-menu">
+                            <a href="telaProdutoBaterias.html">Baterias</a>
+                            <a href="telaProdutoGaitas.html">Gaitas</a>
+                            <a href="telaProdutoGuitarras.html">Guitarras</a>
+                            <a href="telaProdutoTeclados.html">Teclados</a>
+                            <a href="telaProdutoVioloes.html">Violões</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="sobreNos.html">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Logar</a>
+                    </li>
+                    <li>
+                        <a href="carrinho.html">Carrinho</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div id="areaBanner"><img id="bannerSite"></div>
+        </header>
 
-    <p id="areaTexto">
-        Este site é dedicado a exibir os principais diretores de cinema que dirigiram grandes <br> obras do cinema mundial. Também haverá uma pequena sinopse sobre o diretor.
-        <br>
-        <br>
-        Por fim mostraremos obras destaques que merecem um pouco de sua atenção.
-    </p>
+        <section id="areaConteudo">
+            <h2 id="tituloCont">NOSSOS PRODUTOS</h2>
+            <div id="areaExpoMenu">
+                <div id="areaBateria">
+                    <a href="telaProdutoBaterias.html"><img src="imagens/ImgsBaterias/dest01.png" alt="" id="prodBateria"></a>
+                </div>
+                <div id="areaViolao">
+                    <a href="telaProdutoVioloes.html"><img src="imagens/ImgsVioloes/vend01.png" alt="" id="prodViolao"></a>
+                </div>
+                <div id="areaTeclado">
+                    <a href="telaProdutoTeclados.html"><img src="imagens/ImgsTeclados/destExpo02.png" alt="" id="prodTeclado"></a>
+                </div>
+                <div id="areaGaita">
+                    <a href="telaProdutoGaitas.html"><img src="imagens/ImgsGaitas/expoGaita.png" alt="" id="prodGaita"></a>
+                </div>
+                <div id="areaGuitarra">
+                    <a href="telaProdutoGuitarras.html"><img src="imagens/ImgsGuitarras/dest01.png" alt="" id="prodGuitarra"></a>
+                </div>
+            </div>       
+        </section>
 
-    <section id="areaMenu">
-        <h2 id="tituloMenu">MENU</h2>
-        <div id="menu">
-            <a href="" id="linksMenu">Quntin Tarantino</a>
-            <a href="" id="linksMenu">Martin Scorcese</a>
-            <a href="" id="linksMenu">Alfred Hichcock</a>
-            <a href="" id="linksMenu">Stanley Kubrick</a>
-            <a href="" id="linksMenu">Walt Disney</a>
-            <a href="" id="linksMenu">George Lucas</a>
-            <a href="" id="linksMenu">James Gunn</a>
-            <a href="" id="linksMenu">David Fincher</a>
-            <a href="" id="linksMenu">Chistopher Nolan</a>
-            <a href="" id="linksMenu">Bob Esponja</a>
-            <a href="" id="linksMenu">OBRAS DESTAQUES</a>
-        </div>
-    </section>
+        <footer>
+            <section class="secaoRodape scR1">
+                <h3 class="tituloRodape">PRODUTOS</h3>
+                <div id="areaLinksProd">
+                    <a href="telaProdutoVioloes.html" class="linksProd">VIOLÕES</a>
+                    <a href="telaProdutoBaterias.html" class="linksProd">BATERIAS</a>
+                    <a href="telaProdutoGuitarras.html" class="linksProd">GUITARRAS</a>
+                    <a href="telaProdutoGaitas.html" class="linksProd">GAITAS</a>
+                    <a href="telaProdutoTeclados.html" class="linksProd">TECLADOS</a>
+                </div>
+            </section>
+            <section class="secaoRodape scR2">
+                <h3 class="tituloRodape">ATENDIMENTO</h3>
+                <div id="areaContatos">
+                    <img src="imagens/imgTelefone.png" alt="" class="imgTelefone">
+                    <img src="imagens/imgEmail.png" alt="" class="imgEmail">
+                </div>
+            </section>
+            <section class="secaoRodape scR3">
+                <h3 class="tituloRodape tituloPagamento">FORMAS DE PAGAMENTO</h3>
+                <img id="imgPagamento" src="imagens/imgPag.png" alt="">
+            </section>
+    
+            <div id="areaLogoFooter"><img src="imagens/LogoFooter.png" alt="" id="logo"></div>
+        </footer>
 </body>
+
+<script src="script/script.js"></script>
+
 </html>

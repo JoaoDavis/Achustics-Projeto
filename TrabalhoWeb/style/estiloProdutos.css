@@ -18,7 +18,14 @@
     width: 9vw;
 }
 
-#linksMenu {
+nav{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+nav ul {
     display: grid;
     align-items: center;
     justify-items: center;
@@ -26,12 +33,41 @@
     font-size: 1.3vw;
 }
 
-#linksMenu #Links{
-    font-family: "Khand", sans-serif;
-    font-weight: 300;
-    text-decoration: none;
-    color: #442B02;
+nav li{
+    display: inline-block;
 }
+
+nav li a{
+    font-family: "Khand", sans-serif;
+    display: inline-block;
+    color: #442B02;
+    text-decoration: none;
+    padding: 1vw;
+    font-size: 1.3vw;
+}
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none;
+    background-color: #fff;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    background-color: #785B31;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/* ----------------------------------*/
 
 #areaBanner {
     display: grid;
@@ -67,6 +103,10 @@
     width: 7vw;
 }
 
+.imgBateria {
+    width: 15vw;
+}
+
 .prodIndividual {
     display: grid;
     align-items: center;
@@ -75,7 +115,7 @@
     border: 1px solid #785B31;
     border-radius: 10px;
     text-align: center;
-    padding-top: 1vw;
+    padding: 1vw;
 }
 
 .descProd {
@@ -158,3 +198,4 @@ footer {
     padding-right: 2vw;
     margin-top: 1vw;
 }
+
