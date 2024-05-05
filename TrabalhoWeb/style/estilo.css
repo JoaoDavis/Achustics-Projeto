@@ -101,3 +101,99 @@ html ::-webkit-scrollbar {
   font-size: 2vw;
   color: #442B02;
 }
+
+/** 
+.produtos {
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5vw;
+    padding: 1vw 4vw;
+}
+**/
+
+.areaContCar {
+  position: relative;
+  padding: 15px;
+  max-width: 75vw;
+  margin: 0 auto;
+}
+
+.areaProdCar {
+  overflow-x: auto;
+}
+
+.areaProdCar::-webkit-scrollbar {
+  display: none;
+}
+
+.tituloAreaProd {
+  color: #442B02;
+  font-family: "Inter", sans-serif;
+  font-size: 1.08vw;
+  font-weight: 300;
+  margin-bottom: 1vw;
+  margin-left: 8vw;
+}
+
+.produtosCar {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1vw;
+}
+
+.prodIndividualCar {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid #785B31;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1vw 4vw;
+}
+
+.imgProd {
+  width: 7vw;
+}
+
+.descProd {
+  font-family: "Khand", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: #442B02;
+  font-size: 1.2vw;
+}
+
+.setaEsq,
+.setaDir {
+position: absolute;
+font-size: 1.5vw;
+line-height: 26vw;
+width: 2vw;
+color: #000;
+transition: all 600ms ease-in-out;
+background: transparent;
+border-radius: 10px 0 0 10px;
+background: linear-gradient(to left, transparent 0%, #B98740 200%);
+opacity: 1;
+cursor: pointer;
+border: none;
+}
+
+.setaEsq {
+  margin-left: -1vw;
+}
+
+.setaEsq:hover,
+.setaDir:hover {
+opacity: 0.8;
+}
+
+.setaDir {
+margin-right: -1vw;
+right: 0;
+left: auto;
+text-align: right;
+border-radius: 0 10px 10px 0;
+padding-right: 0.4vw;
+background: linear-gradient(to right, transparent 0%, #B98740 200%);
+}
